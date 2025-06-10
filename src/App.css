@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+:root{
+  --white: #EAE2CB;
+  --black: #000035;
+  --red:  #9D2B0F;
+  --yellow: #CB822D;
+  --lightgreen: #01787F;
+  --darkgreen: #222908;
+  --purple: #C6C3E5;
+ }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* girar disco  */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .disco {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+
+
+/* tocando disco */
+.tocandodisco{
+  position: relative;
+  display: inline-block;
+}
+
+
+.vitrola{
+  position: relative;
+  width: 25rem;
+  z-index: 2;
+}
+
+.disco{
+  position: absolute;
+  width: 19rem;
+  top: 2%;
+  left: 3%;
+  z-index: 1;
+}
